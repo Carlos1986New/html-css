@@ -5,9 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas</title>
     <style>
+
+        body{
+            background-color: lightblue;
+        }
         table{
+            background-color: white;
             width: 500px;
             border-collapse: collapse;
+        }
+        caption {
+            font-size: 1.5em;
+            background-color: lightgray;
+            padding: 10px;
         }
         td, th {
             border: 1px solid black;
@@ -30,8 +40,8 @@
     <table>
         <caption><strong>Todos os estados brasileiro e sua população</strong></caption>
         <thead>
-            <th>Estados</th>
-            <th>População</th>
+            <th scope="col">Estados</th>
+            <th scope="col" style="width: 50px;">População</th>
         </thead>
         <tbody>
             <tr>
@@ -145,7 +155,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th> <td class="numero">213.545.706</td>
+                <th scope="row">Total de Habitantes</th> <td class="numero">213.545.706</td>
             </tr>
         </tfoot>
     </table>
