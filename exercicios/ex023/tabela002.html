@@ -9,10 +9,21 @@
         body{
             background-color: lightblue;
         }
+
         table{
             background-color: white;
             width: 500px;
             border-collapse: collapse;
+            position: relative;
+        }
+        thead tr th{
+            position: sticky;
+            top: -1px;
+            background-color: rgb(73, 73, 73);
+        
+        }
+        tbody tr:nth-child(2n){
+            background-color: lightgray;
         }
         caption {
             font-size: 1.5em;
@@ -27,7 +38,7 @@
                 text-align: right;
             }
             th {
-                background-color: gray;
+                background-color: rgb(73, 73, 73);
                 color: white;
             }
             tfoot tr td {
