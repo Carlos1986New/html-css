@@ -11,19 +11,19 @@
         body {
             background-color: lightblue;
         }
-        form {
-            background-color: white;
-            width: 30vw;
-            border: 2px solid;
-            padding: 10px 5px;
+        form p:hover {
+            color: lightcoral;
         }
-        
+          
     </style>
 </head>
 <body>
-    <form>
-        <p>Nome: <input type="text" name="Nome" id="nome"></p>
-        <p>Sobrenome: <input type="text" name="sobrenome" id="sobrenome"></p>
+    <h1>Meu primeiro formulário</h1>
+    <form action="cadastro.php" autocomplete="off">
+        <p><label for="inome">Nome:</label>
+             <input type="text" name="Nome" id="inome"></p>
+        <p><label for="isobrenome">Sobrenome:</label>
+             <input type="text" name="sobrenome" id="isobrenome"></p>
         <input type="submit" value="enviar">
     </form>
 </body>
