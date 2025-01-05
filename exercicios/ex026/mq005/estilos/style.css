@@ -103,7 +103,7 @@ article > p {
     }
 
     menu {
-        display: block;
+        display: none;
         background-color: #34495e; /* Azul escuro */
         width: 100%;
     }
