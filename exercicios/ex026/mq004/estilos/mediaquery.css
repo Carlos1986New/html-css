@@ -18,7 +18,7 @@ Grandes telas: acima de 1200px
         border: 2px solid black;
     }
     main::after{
-        content: Essa impressão foi feito atravez do site www.cursoemvideo.com;
+        content: ("Essa impressão foi feito atravez do site www.cursoemvideo.com");
         text-decoration: overline;
     }
 
