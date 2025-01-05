@@ -1,5 +1,59 @@
 @charset "UTF-8";
 
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
 body, html {
-    background-color: lightgrey;
+    background-color: #f0f4f8; /* Cinza claro com tom azulado */
+}
+
+header {
+    background-color: #34495e; /* Azul escuro suave */
+}
+header > h1 {
+    padding: 10px;
+    text-align: center;
+    color: #ecf0f1; /* Branco gelo */
+}
+menu {
+    display: block;
+}
+menu > ul {
+    list-style-type: none;
+}
+
+menu > ul > li > a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    background-color: #2c3e50; /* Azul escuro */
+    color: #ecf0f1; /* Branco gelo */
+    border-top: 2px solid #34495e; /* Azul escuro suave */
+}
+menu > ul > li > a:hover {
+    background-color: #1abc9c; /* Verde água */
+}
+main {
+    width: 90vw;
+    background-color: #ffffff; /* Branco puro */
+    margin: auto;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Leve sombra */
+}
+article > h2 {
+    padding-bottom: 20px;
+    color: #34495e; /* Azul escuro suave */
+}
+article > p {
+    text-align: justify;
+    margin-bottom: 20px;
+    text-indent: 20px;
+    color: #2c3e50; /* Azul escuro */
+    line-height: 1.6; /* Melhor leitura */
 }
