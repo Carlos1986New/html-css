@@ -6,6 +6,7 @@
     <title>Media Query</title>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/mediaquery.css">
 </head>
 <body>
     <header>
@@ -21,7 +22,7 @@
             </ul>
         </menu>
     </header>
-    <main>
+    <main onresize="mudouTamanho()">
         <article>
             <h2>Testando Media Queries</h2>
             <p>O desenvolvimento de sites responsivos é uma prática essencial nos dias de hoje, dado o grande número de dispositivos disponíveis no mercado, desde smartphones e tablets até desktops e monitores ultrawide. As media queries desempenham um papel fundamental nesse processo, permitindo que os desenvolvedores ajustem o layout, o estilo e até mesmo a funcionalidade de um site com base no tamanho da tela do usuário. Por exemplo, elementos que podem parecer bem organizados em um monitor grande podem se sobrepor ou se tornar difíceis de ler em uma tela menor, como a de um smartphone. Por isso, é crucial testar e ajustar o design para que o site proporcione uma experiência consistente e agradável em todas as plataformas. Isso pode incluir a mudança de fontes, espaçamentos, tamanhos de imagens e até mesmo a ordem dos elementos exibidos.</p>
@@ -34,6 +35,14 @@
         </article>
     </main>
     <script>
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            }
+                else {
+                    itens.style.display = 'none'
+                }
+        }
         function clickMenu() {
             if (itens.style.display == 'block') {
                 itens.style.display = 'none'}
