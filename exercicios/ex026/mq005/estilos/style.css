@@ -18,8 +18,20 @@ header > h1 {
     text-align: center;
     color: #ecf0f1; /* Branco gelo */
 }
-menu {
+span#burguer {
     display: block;
+    color: #ecf0f1; /* Branco gelo */
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    border-top: 2px solid #ecf0f1;
+}
+span#burguer:hover {
+    background-color: #1abc9c;
+    color: #2c3e50;
+}
+menu {
+    display: none;
 }
 menu > ul {
     list-style-type: none;

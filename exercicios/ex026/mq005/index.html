@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
     <header>
-        <h1>Meu Site</h1>
-        <menu>
+        <h1>Media Query</h1>
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">Menu</span> 
+        <menu id="itens">
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Sobre</a></li>
@@ -31,5 +33,13 @@
             <p>Em suma, testar e implementar media queries é um passo indispensável no desenvolvimento web. É um processo que exige atenção aos detalhes, experimentação e uma compreensão sólida das necessidades do público-alvo. Hoje em dia, um site que não seja responsivo está em desvantagem significativa, pois os usuários esperam uma experiência perfeita, independentemente do dispositivo utilizado. Portanto, ao criar um site, reserve tempo para definir e testar os breakpoints, garantindo que cada elemento esteja perfeitamente posicionado e funcional, independentemente do contexto. Afinal, o objetivo principal é proporcionar uma experiência de usuário positiva, e as media queries são a chave para alcançar esse objetivo em um mundo digital cada vez mais diversificado e exigente.</p>
         </article>
     </main>
+    <script>
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'}
+                else { itens.style.display = 'block' }
+                
+        }
+    </script>
 </body>
 </html>
