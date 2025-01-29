@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-box</title>
+    <style>
+        /* Estilização do contêiner principal */
+        div.container {
+            background-color: lightcoral; /* Define a cor de fundo do contêiner */
+            display: flex; /* Ativa o Flexbox no contêiner */
+            flex-flow: row wrap;
+        }
+        /* Estilização dos elementos filhos */
+        div.filho {
+            text-align: center; /* Centraliza o texto dentro dos elementos filhos */
+            border: 1px solid black; /* Adiciona uma borda preta aos elementos filhos */
+            background-color: wheat;
+            flex-basis: 150px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Contêiner principal que utiliza Flexbox -->
+    <div class="container">
+        <!-- Elementos filhos dentro do contêiner Flexbox -->
+        <div class="filho">A</div>
+        <div class="filho">B</div>
+        <div class="filho">aqui esta um item grande</div>
+        <div class="filho">D</div>
+        <div class="filho">este item é maior porque tem mais conteudo que o outro</div>
+        <div class="filho">F</div>
+        <div class="filho">gosto mais desse porque esse aqui tem um conteudo que nenhum dos outros podem ter por serem menor que esse</div>
+    </div>
+</body>
+</html>
