@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-box</title>
+    <style>
+        /* Estilização do contêiner principal */
+        div.container {
+            background-color: aquamarine; /* Define a cor de fundo do contêiner */
+            display: flex; /* Ativa o Flexbox no contêiner */
+            flex-flow: row wrap;
+        }
+        /* Estilização dos elementos filhos */
+        div.filho {
+            text-align: center; /* Centraliza o texto dentro dos elementos filhos */
+            border: 1px solid black; /* Adiciona uma borda preta aos elementos filhos */
+            flex-basis: 250px;
+            flex-basis: 200px;
+        }
+        div#cxA {
+            flex-shrink: 1;
+            flex-grow: 1;
+        }
+        div#cxB {
+            flex-shrink: 0;
+            flex-grow: 2;
+        }
+        div#cxC {
+            flex-shrink: 2;
+            flex-grow: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Contêiner principal que utiliza Flexbox -->
+    <div class="container">
+        <!-- Elementos filhos dentro do contêiner Flexbox -->
+        <div class="filho" id="cxA">A</div>
+        <div class="filho" id="cxB">B</div>
+        <div class="filho" id="cxC">C</div>
+       
+    </div>
+</body>
+</html>
